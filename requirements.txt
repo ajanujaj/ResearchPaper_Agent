@@ -1,0 +1,10 @@
+langchain
+langraph
+langsmith
+streamlit
+openai
+faiss-cpu
+tiktoken
+pydantic
+python-dotenv
+arxiv
