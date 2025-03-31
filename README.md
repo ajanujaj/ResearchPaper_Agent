@@ -15,21 +15,28 @@ conda activate llm_research
 pip install -r requirements.txt
 pip install --upgrade langchain langchain-community
 python -c "import langchain_community; print('LangChain is working!')"
+```
 
-
+#### project structure
+```bash
 LLM_QA_RP/
 │── README.md               # Project documentation
 │── run.py                  # Main script to run the QA system
-│── requirements.txt         # List of dependencies
+│── requirements.txt        # List of dependencies
+│── app.py                  # run using streamlit
 │
 ├── src/langchain_pipeline/
 │   ├── qa_chain.py          # Core LangChain pipeline for retrieval and answering
-│   ├── prompt_template.py   # Contains the prompt structure for the LLM
-│   ├── retriever.py         # Manages document retrieval
-│
-├── data/                    # Stores research papers (if applicable)
-└── tests/                   # Unit tests for QA pipeline
-
+│   ├── text_prepocessing.py 
+│   ├── vector_store.py      
+│   ├── load_papers.py      
+├── src/langchain_workflow/
+│   ├── Agent_prompt.py 
+├── src/utils.py
+├── src/config.py
+```
 
 #### To modify the template. 
+```bash
 src/langraph_workflow/Agent_prompt.py
+```
