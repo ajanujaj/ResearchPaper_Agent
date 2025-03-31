@@ -22,7 +22,7 @@ if st.button("📂 Process Paper", use_container_width=True):
     with st.spinner("🔄 Processing paper... Please wait!"):
         try:
             paper_summary = process_paper(arxiv_id)
-            st.success("✅ Paper Processed Successfully!")
+            st.success("Paper Processed Successfully!")
             st.write(paper_summary)
         except Exception as e:
             st.error(f"⚠️ Error: {e}")
